@@ -13,7 +13,7 @@ body{
 }
 
 .drum-machine{
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 25%;
   width: 700px;

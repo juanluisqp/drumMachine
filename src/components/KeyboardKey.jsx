@@ -10,11 +10,12 @@ const KeyboardKey = ({id, setDisplay, keyTrigger, url, keyCode, keys}) => {
     const handleKeydown = (e) => { // Funcion para que cuando se presiona una tecla ejecute la funcion play
         if (e.keyCode === keyCode) {
             play(keyTrigger)
+            setDisplay(id)
             }
     }
     React.useEffect(() => {
         document.addEventListener('keydown', handleKeydown)
-        }, [])
+        }, )
     
     return (             
         <button className='drum-pad' id={keys} onClick = {()=> play(keyTrigger)} >          
